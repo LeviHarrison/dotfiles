@@ -1,0 +1,1 @@
+/home/levi/.config/nvim/init.vim
