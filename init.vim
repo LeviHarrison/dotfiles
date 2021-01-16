@@ -16,6 +16,8 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'itchyny/lightline.vim'
 
+Plug 'wakatime/vim-wakatime'
+
 call plug#end()
 
 silent! colorscheme horizon
