@@ -18,8 +18,6 @@ Plug 'itchyny/lightline.vim'
 
 Plug 'wakatime/vim-wakatime'
 
-"Plug '/mnt/c/Users/levis/Desktop/projects/twitter-neovim/'
-
 call plug#end()
 
 silent! colorscheme horizon
