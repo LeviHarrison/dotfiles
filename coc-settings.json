@@ -1,10 +1,12 @@
 {
-	"coc.preferences.formatOnSaveFiletypes": [
-		"css",
-		"typescript",
-		"json",
-		"graphql",
-		"markdown",
-		"rust"
-	]
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "typescript",
+    "json",
+    "graphql",
+    "markdown",
+    "rust",
+    "javascript",
+    "html"
+  ]
 }
