@@ -80,3 +80,4 @@ let g:go_highlight_variable_assignments = 1
 let g:javascript_plugin_jsdoc = 1
 
 tnoremap <Esc> <C-\><C-n>
+nnoremap <C-z> u
