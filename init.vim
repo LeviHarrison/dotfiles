@@ -37,7 +37,7 @@ let g:coc_global_extensions=[
 	      \'coc-json',
 	      \'coc-marketplace',
 	      \'coc-prettier',
-        \'coc-python',
+        \'coc-pyright',
 				\'coc-rust-analyzer',
 				\'coc-sh',
 	      \'coc-snippets',
@@ -46,6 +46,7 @@ let g:coc_global_extensions=[
 	      \'coc-tailwindcss',
         \'coc-tsserver',
 				\'coc-yaml',
+				\'coc-clangd',
 	\]
 
 if has("patch-8.1.1564")
