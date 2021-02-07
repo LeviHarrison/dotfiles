@@ -1,4 +1,5 @@
 set termguicolors
+set encoding=UTF-8
 
 call plug#begin('~/.vim/plugged')
 
@@ -13,6 +14,12 @@ Plug 'ntk148v/vim-horizon'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
+Plug 'ryanoasis/vim-devicons'
 
 Plug 'itchyny/lightline.vim'
 
@@ -80,5 +87,24 @@ let g:go_highlight_variable_assignments = 1
 
 let g:javascript_plugin_jsdoc = 1
 
+nnoremap ff <cmd>Telescope find_files<cr>
 tnoremap <Esc> <C-\><C-n>
 nnoremap <C-z> u
+
+lua << EOF
+require('telescope').setup{
+	defaults = {
+		winblend = 20;
+  width = 0.8;
+  show_line = false;
+  prompt_title = '';
+  results_title = '';
+  preview_title = '';
+  borderchars = {
+    prompt = {'▀', '▐', '▄', '▌', '▛', '▜', '▟', '▙' };
+    results = {'▀', '▐', '▄', '▌', '▛', '▜', '▟', '▙' };
+    preview = {'▀', '▐', '▄', '▌', '▛', '▜', '▟', '▙' };
+  };
+	}
+}
+EOF
