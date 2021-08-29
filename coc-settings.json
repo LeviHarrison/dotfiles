@@ -4,13 +4,14 @@
     "typescript",
     "json",
     "graphql",
-    "markdown",
     "rust",
     "javascript",
     "javascriptreact",
+    "typescriptreact",
     "html",
     "python",
     "c",
-    "yaml"
+    "yaml",
+    "yacc"
   ]
 }

@@ -10,7 +10,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'chemzqm/vim-jsx-improve'
 
-Plug 'ntk148v/vim-horizon'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -21,9 +21,11 @@ Plug 'itchyny/lightline.vim'
 
 Plug 'wakatime/vim-wakatime'
 
+Plug 'mustache/vim-mustache-handlebars'
+
 call plug#end()
 
-silent! colorscheme horizon
+silent! colorscheme onehalfdark
 set number
 set tabstop=2
 set shiftwidth=2
@@ -59,7 +61,7 @@ else
 	set signcolumn=yes
 endif
 
-let g:lightline = {'colorscheme' : 'horizon'}
+let g:lightline = {'colorscheme' : 'onehalfdark'}
 
 let g:go_code_completion_enabled = 0
 let g:go_fmt_command = "goimports"
@@ -82,6 +84,8 @@ let g:go_highlight_variable_declarations = 1
 let g:go_highlight_variable_assignments = 1
 
 let g:javascript_plugin_jsdoc = 1
+
+let g:mustache_abbreviations = 1
 
 tnoremap <Esc> <C-\><C-n>
 nnoremap <C-z> u
