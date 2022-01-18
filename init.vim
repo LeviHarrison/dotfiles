@@ -23,6 +23,8 @@ Plug 'wakatime/vim-wakatime'
 
 Plug 'mustache/vim-mustache-handlebars'
 
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
+
 call plug#end()
 
 silent! colorscheme onehalfdark
